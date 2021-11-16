@@ -1,0 +1,34 @@
+domain: iwhalecloud.com
+layout:
+- go.kubebuilder.io/v3
+projectName: oracle-operator
+repo: oracle-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: iwhalecloud.com
+  group: oracle
+  kind: OracleCluster
+  path: oracle-operator/api/v1
+  version: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: iwhalecloud.com
+  group: oracle
+  kind: OracleBackup
+  path: oracle-operator/api/v1
+  version: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: iwhalecloud.com
+  group: oracle
+  kind: OracleRestore
+  path: oracle-operator/api/v1
+  version: v1
+version: "3"
